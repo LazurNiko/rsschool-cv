@@ -1,0 +1,309 @@
+body {
+  background: #236588;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  box-sizing: border-box;
+
+  --main-color: #6CCAD1;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  font-weight: 400;
+}
+
+.wrapper {
+  border: #ffffff;
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar {
+  margin: 0;
+  background: #09264B;
+  width: 300px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.my-photo {
+  width: 300px;
+}
+
+.contacts {
+  background: var(--main-color);
+  width: 240px;
+  padding: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.tech_skills {
+  width: 300px;
+  padding: 40px;
+    
+}
+
+.soft_skills {
+  width: 300px;
+  padding-left: 40px;
+  margin-bottom: 40px;
+  margin-bottom: 10px;
+}
+
+.skills_title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #236588;
+}
+
+.skills {
+  color: var(--main-color);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.name {
+  color: rgb(255, 218, 115);
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 89px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about {
+  padding: 80px 80px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tel {
+  color: #000;
+  text-decoration: none;
+}
+
+.tel:hover {
+  text-decoration: underline;
+}
+
+.contacts_title {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+  color: #236588;
+}
+
+.profession {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 23px;
+}
+
+.info {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about_profession {
+  margin: 0 0 60px;
+}
+
+.portfolio {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio_number {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: var(--main-color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--main-color);;
+}
+
+.link_skills {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio_links {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dots {
+  font-weight: 100;
+}
+
+.container {
+  margin-bottom: 40px;
+}
+
+.tasks {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 24px;
+  margin-top: 18px;
+  margin-bottom: 14px;
+}
+
+.tasks_color {
+  color: var(--main-color);
+}
+
+.period {
+  font-size: 12px;
+  color: #a8a8a8;;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.lined {
+  color: #000000;
+}
+
+.prof_items {
+  margin-bottom: 30px;
+}
+
+.prof_item {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 24px;
+}
+
+.prof_item--link {
+  text-decoration: none;
+  color: #000;
+}
+
+.university {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 24px;
+}
+
+.specialization {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 14px;
+}
+
+.education_info {
+  margin-top: 21px;
+}
+
+.education {
+  margin-top: 20px;
+}
+
+.work {
+  margin-bottom: 10px;
+}
+
+.footer {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.footer_items {
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.footer_items--item {
+  padding-left: 50px;
+}
+
+.footer_items--item:first-child {
+  padding-left: 0;
+}
+
+.footer_logo {
+  width: 70px;
+}
+
+.footer_git {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.footer_git--icon {
+  width: 30px;
+}
+
+.footer_git:hover {
+  text-decoration: underline;
+}
+
+.footer_year {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footer_link {
+  text-decoration: none;
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+  justify-content: center;
+}
+
+.footer_link:hover {
+  text-decoration: underline;
+}
