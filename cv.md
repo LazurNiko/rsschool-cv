@@ -12,6 +12,8 @@
 
 > Lazur.niko@gmail.com
 
+> [LinkedIn](www.linkedin.com/in/niko-lazur)
+
 ---
 
 ## Portfolio
