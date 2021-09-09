@@ -1,6 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 1200px;
   background: #236588;
+  font-size: 12px;
   font-family: 'Montserrat', sans-serif;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -13,22 +18,12 @@ body {
   --main-color: #6CCAD1;
 }
 
-.header {
-  background-size: cover;
-  background-position: center;
-  background-image: url(../images/header.jpg);
-}
-
 .header__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
 }
-
-.header__call {
-  text-decoration: none;
-  }
 
 .header__title {
   font-size: 46px;
@@ -49,34 +44,24 @@ body {
 
 .page {
   scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 27px;
-  color: #3e3e3e;
-  scroll-behavior: smooth;
 }
 
 .page__menu {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  z-index: 1;
   left: 0;
   right: 0;
 }
 
-.menu__content {
-  box-sizing: border-box;
-  padding: $headerTopPadding 0;
-}
-
 .menu__list {
+  display: flex;
   list-style: none;
-  padding: 0;
-  margin: 0 0 48px;
+  padding: 0 0 0 300px;
+  margin: 0 0 40px;
 }
 
 .menu__item {
-  margin-bottom: 24px;
+  padding-right: 30px;
 }
 
 .menu:last-child {
@@ -87,40 +72,26 @@ body {
   display: inline-block;
   padding: 8px;
   border-bottom: 1px solid transparent;
-  color: #fff;
+  color: var(--main-color);
   text-decoration: none;
-  font-size: 22px;
+  font-size: 12px;
   font-weight: bold;
-  line-height: 22px;
+  line-height: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  transition: border-color 0.3s;
+  transition: 0.3s ease-in;
 }
 
 .menu__link:hover {
-  border-color: #fff;
+  border-color: var(--main-color);
+  transition: 0.3s ease-out;
+  color: #a0f2f8;
 }
 
-.menu__call {
-  display: block;
-  width: max-content;
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #fff;
+.menu__link.active {
+  color: #a0f2f8;
+  border-bottom: 1px solid var(--main-color);
 }
-
-.menu__call--phone {
-  margin-bottom: 16px;
-}
-
-.menu__call--action {
-  padding-bottom: 8px;
-  border-bottom: 1px solid #fff;
-}
-
 
 ol {
   font-weight: 400;
@@ -187,11 +158,12 @@ ol {
 }
 
 .name {
-  color: rgb(255, 218, 115);
+  color: #a0f2f8;
   font-size: 45px;
   font-weight: 700;
   line-height: 89px;
   font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
 }
 
 .about {
@@ -213,7 +185,6 @@ ol {
 }
 
 .contacts_title {
-  font-family: Montserrat;
   font-size: 22px;
   font-weight: 700;
   color: #236588;
@@ -222,9 +193,11 @@ ol {
 .profession {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 23px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  padding-top: 70px;
+  color: var(--main-color);
 }
 
 .info {
@@ -246,6 +219,7 @@ ol {
 }
 
 .portfolio {
+  color: #09264B;
   font-size: 26px;
   font-weight: 700;
   line-height: 24px;
@@ -274,7 +248,7 @@ ol {
 
 .link:hover {
   transition: 0.2s linear;
-  color: var(--main-color);;
+  color: var(--main-color);
 }
 
 .link_skills {
@@ -326,6 +300,7 @@ ol {
 
 .prof_items {
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .prof_item {
@@ -356,12 +331,13 @@ ol {
   margin-bottom: 14px;
 }
 
-.education_info {
-  margin-top: 21px;
-}
-
 .work {
   margin-bottom: 10px;
+}
+
+.arrow {
+  display: flex;
+  padding-left: 550px;
 }
 
 .footer {
