@@ -87,7 +87,7 @@ ol {
 .sidebar {
   margin: 0;
   background: #09264B;
-  width: 20%;
+  width: 30%;
   padding-top: 10px;
   padding-bottom: 40px;
 }
@@ -104,7 +104,6 @@ ol {
   font-size: 12px;
   font-weight: 700;
   line-height: 24px;
-  max-width: 160px;
 }
 
 .contacts_list {
@@ -427,17 +426,10 @@ ol {
   .menu__link {
     font-size: 10px;
   }
-}
-
-@media (max-width: 768px) {
 
   .about {
     padding: 0 40px;
     width: 60%;
-  }
-
-  .contacts {
-    padding: 20px;
   }
 
   .tel {
@@ -463,6 +455,10 @@ ol {
 
   .arrow {
     padding-left: 400px;
+  }
+
+  .footer_link {
+    font-size: 20px;
   }
 }
 
@@ -602,11 +598,11 @@ ol {
   }
 
   .footer_logo {
-width: 150px;
+    width: 150px;
   }
 
   .footer_git--icon {
-width: 80px;
+    width: 80px;
   }
 
   .footer_year {
@@ -618,9 +614,20 @@ width: 80px;
   }
 }
 
+@media (max-width: 450px) {
+
+  .arrow {
+    padding-left: 250px;
+  }
+}
+
 @media (max-width: 360px) {
 
   .name {
     font-size: 35px;
+  }
+
+  .arrow {
+    padding-left: 200px;
   }
 }
