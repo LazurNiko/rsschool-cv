@@ -1,1 +1,1 @@
-https://LazurNiko.github.io/rsschool-cv/cv
+https://lazurniko.github.io/rsschool-cv/
