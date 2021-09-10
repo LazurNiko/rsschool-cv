@@ -11,9 +11,9 @@
     >
   </head>
 
-  <header class="header">
-    <nav class="page__menu" id="menu">
-      <div class="container">
+  <body class="page">
+    <header class="header">
+      <nav class="page__menu" id="menu">
         <div class="menu__content">
           <ul class="menu__list">
             <li class="menu__item">
@@ -35,11 +35,9 @@
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <body>
     <main class="wrapper">
       <aside class="sidebar">
         <img
@@ -47,38 +45,42 @@
           src="./images/me.jpg"
           alt="My photo"
         >
-        <section class="contacts">
-          <h3 class="contacts_title">Contacts</h3>
-          <div>
-            <a class="tel" href="tel:380636255255">+380636255255</a>
-          </div>
-          <div>
-            <a class="tel" href="mailto:Lazur.niko@gmail.com">Lazur.niko@gmail.com</a>
-          </div>
-          <div> 
-          <a class="tel" href="https://t.me/Niko_Lazur">Telegram</a>
-          </div>
-          <div>
-          <a class="tel" href="https://github.com/LazurNiko">GitHub</a>
-          </div>
-        </section>
-        <section class="tech_skills">
-        <h3 class="skills_title">Tech Skills</h3>
-        <ul>
-            <li class="skills">HTML5/CSS3/JS</li>
-            <li class="skills">Bootstrap4/JQuery</li>
-            <li class="skills">SQL</li>
-            <li class="skills">English: Intermediate</li>
-        </ul>
-        </section>
-        <section class="soft_skills">
-          <h3 class="skills_title">Soft Skills</h3>
-          <ul>
-            <li class="skills">Scrum</li>
-            <li class="skills">Agile</li>
-            <li class="skills">Teamwork</li>
+        <div class="contacts_and_skills">
+          <section class="contacts">
+            <h3 class="contacts_title">Contacts</h3>
+            <ul class="contacts_list">
+              <li>
+                <a class="tel" href="tel:380636255255">+380636255255</a>
+              </li>
+              <li>
+                <a class="tel" href="mailto:Lazur.niko@gmail.com">Lazur.niko@gmail.com</a>
+              </li>
+              <li>
+              <a class="tel" href="https://t.me/Niko_Lazur">Telegram</a>
+              </li>
+              <li>
+              <a class="tel" href="https://github.com/LazurNiko">GitHub</a>
+              </li>
+            </ul>
+          </section>
+          <section class="tech_skills">
+          <h3 class="skills_title">Tech Skills</h3>
+          <ul class="skills_list">
+              <li class="skills">HTML5/CSS3/JS</li>
+              <li class="skills">Bootstrap4/JQuery</li>
+              <li class="skills">SQL</li>
+              <li class="skills">English: Intermediate</li>
           </ul>
-        </section>
+          </section>
+          <section class="soft_skills">
+            <h3 class="skills_title">Soft Skills</h3>
+            <ul class="skills_list">
+              <li class="skills">Scrum</li>
+              <li class="skills">Agile</li>
+              <li class="skills">Teamwork</li>
+            </ul>
+          </section>
+        </div>
       </aside>
 
       <div class="about">
@@ -221,8 +223,12 @@
                   alt="git"
                 >
               </a>
+            </li>
+
+            <li class="footer_items--year">
               <span class="footer_year">2021</span>
             </li>
+            
 
             <li class="footer_items--item">
               <img

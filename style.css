@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -18,45 +19,23 @@ body {
   --main-color: #6CCAD1;
 }
 
-.header__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
-.header__title {
-  font-size: 46px;
-  line-height: 40px;
-  font-weight: bold;
-  color: #fff;
-  letter-spacing: -1;
-}
-
-.header__title::before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 2px;
-  background-color: #fff;
-  margin-bottom: 24px;
-}
-
 .page {
-  scroll-behavior: smooth;
+  margin: 0 auto;
 }
 
-.page__menu {
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  right: 0;
+.header {
+  float: right;
+  position: relative;
+}
+
+.menu__content {
+  padding-right: 80px;
 }
 
 .menu__list {
   display: flex;
+  justify-content: space-between;
   list-style: none;
-  padding: 0 0 0 300px;
   margin: 0 0 40px;
 }
 
@@ -99,24 +78,23 @@ ol {
 
 .wrapper {
   border: #ffffff;
-  display: flex;
+  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 
 .sidebar {
   margin: 0;
   background: #09264B;
-  width: 300px;
+  width: 20%;
   padding-top: 10px;
   padding-bottom: 40px;
 }
 
 .my-photo {
-  top: 10px;
-  position: relative;
-  width: 250px;
+  width: 100%;
+  display: block;
 }
 
 .contacts {
@@ -126,14 +104,20 @@ ol {
   font-size: 12px;
   font-weight: 700;
   line-height: 24px;
+  max-width: 160px;
+}
+
+.contacts_list {
+  padding: 0;
+  list-style: none;
 }
 
 .tech_skills {
-  width: 200px;
+  max-width: 100%;
 }
 
 .soft_skills {
-  width: 200px;
+  max-width: 100%;
   margin-bottom: 40px;
   margin-bottom: 10px;
 }
@@ -146,6 +130,10 @@ ol {
   padding-top: 20px;
   font-family: 'Montserrat', sans-serif;
   color: #236588;
+}
+
+.skills_list {
+  max-width: 100%;
 }
 
 .skills {
@@ -167,11 +155,8 @@ ol {
 }
 
 .about {
-  display: flex;
-  flex-direction: column;
-  
-  padding-left: 80px;
-  padding-top: 40px;
+  width: 80%;
+  padding: 0 60px;
 }
 
 .tel {
@@ -196,7 +181,7 @@ ol {
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 2px;
-  padding-top: 70px;
+  padding-top: 30px;
   color: var(--main-color);
 }
 
@@ -272,6 +257,7 @@ ol {
 .container {
   padding-left: 60px;
   margin-bottom: 20px;
+  width: 80%;
 }
 
 .tasks {
@@ -342,17 +328,13 @@ ol {
 }
 
 .footer {
-  background-color: var(--main-color);
-  position: relative;
-  width: 800px;
   height: 100px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  right: 80px;
 }
 
 .footer_items {
@@ -368,12 +350,16 @@ ol {
   padding-left: 50px;
 }
 
+.footer_items--year {
+  padding-left: 10px;
+}
+
 .footer_items--item:first-child {
   padding-left: 0;
 }
 
 .footer_logo {
-  width: 70px;
+  width: 100px;
   cursor: pointer;
   transition: 0.3s ease-in;
 }
@@ -390,7 +376,7 @@ ol {
 }
 
 .footer_git--icon {
-  width: 30px;
+  width: 50px;
   transition: 0.3s ease-out;
 }
 
@@ -400,7 +386,8 @@ ol {
 }
 
 .footer_year {
-  font-size: 12px;
+  text-align: center;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -408,6 +395,7 @@ ol {
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
+  font-size: 24px;
   font-weight: 700;
   cursor: pointer;
   text-align: center;
@@ -420,4 +408,219 @@ ol {
   transform: scale(1.1);
   transition: 0.3s ease-in;
   color: #a0f2f8;
+}
+
+@media (max-width: 910px) {
+
+  .menu__content {
+    padding-right: 0;
+  }
+
+  .arrow {
+    padding-left: 400px;
+  }
+
+}
+
+@media (max-width: 830px) {
+
+  .menu__link {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .about {
+    padding: 0 40px;
+    width: 60%;
+  }
+
+  .contacts {
+    padding: 20px;
+  }
+
+  .tel {
+    font-size: 10px;
+  }
+
+  .contacts_title {
+    font-size: 20px;
+  }
+
+  .skills_title {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+
+  .skills_list {
+    padding-left: 20px;
+  }
+
+  .skills {
+    font-size: 10px;
+  }
+
+  .arrow {
+    padding-left: 400px;
+  }
+}
+
+@media (max-width: 760px) {
+
+  .header {
+    text-align: center;
+    float: none;
+  }
+
+  .menu__list {
+    display: block;
+    letter-spacing: 2px;
+    padding: 0;
+  }
+
+  .menu__link {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .wrapper {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .about {
+    width: 85%;
+  }
+
+  .about_profession {
+    padding: 0;
+  }
+
+  .contacts {
+    padding: 20px 0 0;
+    margin-right: 60px;
+    width: 33%;
+    background-color: inherit;
+  }
+
+  .contacts_title {
+    font-size: 25px;
+  }
+
+  .skills_title {
+    font-size: 25px;
+  }
+
+  .tel {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--main-color);
+    font-size: 14px;
+  }
+
+  .tech_skills {
+    width: 32%;
+  }
+
+  .soft_skills {
+    width: 32%;
+  }
+
+  .skills {
+    font-size: 14px;
+  }
+
+  .contacts_and_skills {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .contacts_and_skills {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+  }
+
+  .contacts {
+    padding: 0;
+    width: 100%;
+  }
+
+  .skills_title {
+    margin: 0;
+  }
+
+  .tech_skills {
+    width: 100%;
+  }
+
+  .soft_skills {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .arrow {
+    padding-left: 300px;
+  }
+
+  .footer {
+    height: auto;
+    padding-top: 40px;
+  }
+
+  .footer_items {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer_items--item {
+    padding: 50px 0;
+  }
+
+  .footer_items--item:first-child {
+    padding-bottom: 10px;
+  }
+
+  .footer_items--item:last-child {
+    padding-top: 20px;
+  }
+
+  .footer_logo {
+width: 150px;
+  }
+
+  .footer_git--icon {
+width: 80px;
+  }
+
+  .footer_year {
+    font-size: 24px;
+  }
+
+  .footer_link {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .name {
+    font-size: 35px;
+  }
 }
