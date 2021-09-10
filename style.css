@@ -126,7 +126,7 @@ ol {
   font-weight: 700;
   margin-bottom: 20px;
   padding-left: 30px;
-  padding-top: 20px;
+  padding-top: 17px;
   font-family: 'Montserrat', sans-serif;
   color: #236588;
 }
@@ -226,7 +226,7 @@ ol {
   font-weight: 400;
   line-height: 24px;
   font-family: 'Montserrat', sans-serif;
-  color: #000;
+  color: #09264B;
   text-decoration: none;
   transition: 0.2s linear;
 }
@@ -281,7 +281,7 @@ ol {
 }
 
 .lined {
-  color: #000000;
+  color: #09264B;
 }
 
 .prof_items {
@@ -409,7 +409,7 @@ ol {
   color: #a0f2f8;
 }
 
-@media (max-width: 910px) {
+@media (max-width: 930px) {
 
   .menu__content {
     padding-right: 0;
@@ -421,7 +421,7 @@ ol {
 
 }
 
-@media (max-width: 830px) {
+@media (max-width: 845px) {
 
   .menu__link {
     font-size: 10px;
@@ -465,6 +465,7 @@ ol {
 @media (max-width: 760px) {
 
   .header {
+    display: none;
     text-align: center;
     float: none;
   }
@@ -498,7 +499,6 @@ ol {
 
   .contacts {
     padding: 20px 0 0;
-    margin-right: 60px;
     width: 33%;
     background-color: inherit;
   }
@@ -539,6 +539,10 @@ ol {
 
 @media (max-width: 700px) {
 
+  .about {
+    justify-content: center;
+  }
+
   .contacts_and_skills {
     flex-direction: column;
     justify-content: center;
@@ -546,20 +550,40 @@ ol {
   }
 
   .contacts {
-    padding: 0;
+    display: flex;
+    padding-left: 20px;
     width: 100%;
+  }
+
+  .contacts_list {
+    padding-left: 40px;
+  }
+
+  .tel {
+    padding-left: 40px;
   }
 
   .skills_title {
-    margin: 0;
+    padding: 19px 0;
+    margin: 0 20px;
   }
 
   .tech_skills {
+    display: flex;
     width: 100%;
   }
 
+  .skills_title--soft {
+    padding-right: 9px;
+  }
+
   .soft_skills {
+    display: flex;
     width: 100%;
+  }
+
+  .skills {
+    padding-left: 20px;
   }
 
   .container {
@@ -612,6 +636,51 @@ ol {
   .footer_link {
     font-size: 24px;
   }
+}
+
+@media (max-width: 500px) {
+
+.contacts {
+    padding: 20px 0 0;
+    width: 100%;
+    background-color: inherit;
+    display: block;
+  }
+
+  .contacts_title {
+    margin-left: 20px;
+    font-size: 25px;
+  }
+
+  .contacts_list {
+    padding-left: 0;
+  }
+
+  .skills_title {
+    font-size: 25px;
+  }
+
+  .tel {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--main-color);
+    font-size: 14px;
+  }
+
+  .tech_skills {
+    display: block;
+    width: 100%;
+  }
+
+  .soft_skills {
+    display: block;
+    width: 100%;
+  }
+
+  .skills {
+    font-size: 14px;
+  }
+
 }
 
 @media (max-width: 450px) {
