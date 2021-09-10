@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link href="style.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <nav class="menu page__menu" id="menu">
+        <div class="menu__content">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link active">
+                About me
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#portfolio" class="menu__link">portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a href="#knowledge" class="menu__link">knowledge</a>
+            </li>
+            <li class="menu__item">
+              <a href="#additional_info" class="menu__link">additional info</a>
+            </li>
+            <li class="menu__item">
+              <a href="#education" class="menu__link">education</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="wrapper">
+      <aside class="sidebar">
+        <img
+          class="my-photo"
+          src="./images/me.jpg"
+          alt="My photo"
+        >
+        <div class="contacts_and_skills">
+          <section class="contacts">
+            <h3 class="contacts_title">Contacts</h3>
+            <ul class="contacts_list">
+              <li>
+                <a class="tel" href="tel:380636255255">+380636255255</a>
+              </li>
+              <li>
+                <a class="tel" href="mailto:Lazur.niko@gmail.com">Lazur.niko@gmail.com</a>
+              </li>
+              <li>
+              <a class="tel" href="https://t.me/Niko_Lazur">Telegram</a>
+              </li>
+              <li>
+              <a class="tel" href="https://github.com/LazurNiko">GitHub</a>
+              </li>
+            </ul>
+          </section>
+          <section class="tech_skills">
+          <h3 class="skills_title">Tech Skills</h3>
+          <ul class="skills_list">
+              <li class="skills">HTML5/CSS3/JS</li>
+              <li class="skills">Bootstrap4/JQuery</li>
+              <li class="skills">SQL</li>
+              <li class="skills">English: Intermediate</li>
+          </ul>
+          </section>
+          <section class="soft_skills">
+            <h3 class="skills_title skills_title--soft">Soft Skills</h3>
+            <ul class="skills_list">
+              <li class="skills">Scrum</li>
+              <li class="skills">Agile</li>
+              <li class="skills">Teamwork</li>
+            </ul>
+          </section>
+        </div>
+      </aside>
+
+      <div class="about">
+        <article class="about_profession">
+          <h2 class="profession">
+            Frontend Developer
+          </h2>
+          <h1 class="name">
+            Niko Lazur
+          </h1>
+          <p class="info">
+            I’m a goal-oriented, creative and self-motivated web developer
+            specializing in front-end. I am well familiar with CSS/HTML,
+            Sass preprocessor, JS, cross-browser and adaptive markup skills.
+            Eager to improve my skills, always try to learn new technologies and stay
+            up-to-date with Web development trends. I also learn quickly and easily
+            communicate with people.
+          </p>
+        </article>
+
+        <section class="container" id='portfolio'>
+          <h3 class="portfolio">Portfolio</h3>
+          <ol class="portfolio_number">
+            <li class="portfolio_links">
+              <a class="link" href="https://lazurniko.github.io/Kickstarter/">"Kickstarter"(landing)</a>
+              <span class="dots">............................</span>
+              <span class="link_skills"><b>[</b> HTML5/CSS3/SCSS <b>]</b></span>
+            </li>
+            <li class="portfolio_links">
+              <a class="link" href="https://lazurniko.github.io/layout_miami/">"Miami"(landing)</a>
+              <span class="dots">...............</span>
+              <span class="link_skills"><b>[</b> HTML5/CSS3/SCSS <b>]</b></span>
+            </li>
+            <li class="portfolio_links">
+              <a class="link" href="https://lazurniko.github.io/IVAproduction/">"IVA Production"(landing)</a>
+              <span class="dots">...............</span>
+              <span class="link_skills"><b>[</b> HTML5/CSS3/JS <b>]</b></span>
+            </li>
+            <li class="portfolio_links">
+              <a class="link" href="https://github.com/LazurNiko">GiTHub</a>
+              <span class="dots">.........................</span>
+              <span class="link_skills"><b>[</b> My GitHub Page <b>]</b></span>
+            </li>
+          </ol>
+        </section>
+
+        <section class="container" id='knowledge'>
+          <h3 class="portfolio">Knowledge</h3>
+          <article class="work">
+              <h4 class="tasks">Course <span class="tasks_color">Mate Academy</span></h4>
+              <span class="period">
+                    2021 <span class="lined">|</span> Ukraine
+              </span>
+              <ul class="prof_items">
+                <li class="prof_item">Frontend Development Course</li>
+              </ul>
+          </article>
+
+          <article>
+            <h4 class="tasks">Self <span class="tasks_color">- Education</span></h4>
+              <span class="period">
+                2020 - 2021 <span class="lined">|</span> Ukraine
+              </span>
+            <ul class="prof_items">
+              <li class="prof_item">Java Script Online Course, Codecademy.com</li>
+              <li class="prof_item">Frontend Course Online, RS.School</li>
+            </ul>
+          </article>
+
+          <article>
+            <h4 class="tasks">Readed <span class="tasks_color">Books</span></h4>
+            <span class="period">
+              2020 - 2021 <span class="lined">|</span> Ukraine
+            </span>
+            <ul class="prof_items">
+              <li class="prof_item">Java Script Online, learn.javascript.ru</li>
+              <li class="prof_item">HTML3/CSS3 Online, developer.mozilla.org</li>
+              <li class="prof_item">Eloquent JavaScript: A Modern Introduction to Programming by M. Haverbeke</li>
+              <li class="prof_item">Learning JavaScript by E. Brown</li>
+              <li class="prof_item">You Don't Know JS: ES6 & Beyond by K. Simpson</li>
+              <li class="prof_item">Head First JavaScript Programming: A Brain-Friendly Guide by E. Freeman & E. Robson</li>
+            </ul>
+          </article>
+
+          <article>
+            <h4 class="tasks">
+              Algorithmic <span class="tasks_color">Tasks</span>
+            </h4>
+            <span class="period">
+              2021 <span class="lined">|</span> Ukraine
+            </span>
+            <ul class="prof_items">
+              <li class="prof_item">
+                <a
+                  href="https://www.codewars.com/users/Niko%20Lazur/badges/large"
+                  class="prof_item--link"
+                >
+                    Codewars (Java Script)
+                </a>
+                <br>
+                    250 Solved tasks
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="container" id='additional_info'>
+          <h3 class="portfolio">Additional info</h3>
+          <ul class="prof_items">
+            <li class="prof_item">4 Dan of Aikido Yoshinkan, 20 years in Martial Arts<br>
+              Co-founder and developer of Ukrainian system of military combat & <br>National system of police control
+            </li>
+          </ul>
+        </section>
+
+        <section class="container" id='education'>
+          <h3 class="portfolio">Education</h3>
+          <div class="education_info">
+            <h4 class="university">Lviv State University of Physical Culture</h4>
+            <h4 class="period">
+              September 2006 - June 2010 <span class="lined">|</span> Ukraine
+            </h4>
+            <h4 class="specialization">Physical Rehabilitation</h4>
+          </div>
+        </section>
+
+        <div class="arrow">
+          <a href="#">
+            <img src="./images/arrow.png" alt="arrow">
+          </a>
+        </div>
+
+        <footer class="footer">
+          <ul class="footer_items">
+            <li class="footer_items--item">
+              <a href="https://github.com/LazurNiko" class="footer_git">
+                <img
+                  class="footer_git--icon"
+                  src="./images/github.png"
+                  alt="git"
+                >
+              </a>
+            </li>
+
+            <li class="footer_items--year">
+              <span class="footer_year">2021</span>
+            </li>
+
+            <li class="footer_items--item">
+              <img
+                class="footer_logo"
+                src="./images/rs_school_js.svg"
+                alt='logo'
+              >
+            </li>
+
+            <li class="footer_items--item">
+              <a class="footer_link" href="https://rs.school/js/">
+                to enroll
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
