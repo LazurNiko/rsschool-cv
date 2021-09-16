@@ -1,0 +1,51 @@
+.page {
+  font-family: 'Forum', cursive;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  max-width: 1920px;
+  background-color: #030303;
+  width: 100vh;
+}
+
+.header_inner {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page_header {
+  background-size: cover;
+  background-position: center;
+  background-color: #030303;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 84px 240px;
+}
+
+.section_title {
+  background: url(./assets/image/background.jpg) no-repeat;
+  height: 100vh;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.navigation_list {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation_item_link {
+  color: #fff;
+  text-decoration: none;
+}
